@@ -10,7 +10,7 @@ while (true) // Start an infinite loop to keep the game running until the user d
     Console.Write("Enter your guess: ");
     string? input = Console.ReadLine(); // Read the user's input
 
-    if (input == null) // Check if the input is null (user pressed Enter without typing anything)
+    if (string.IsNullOrWhiteSpace(input)) // Check if the input is null (user pressed Enter without typing anything)
     {
         WriteColoredMessage("Input cannot be empty. Please enter a valid number.", ConsoleColor.Yellow);
         continue; // Skip the rest of the loop and prompt the user again
@@ -26,7 +26,7 @@ while (true) // Start an infinite loop to keep the game running until the user d
     {
         if (guess < 1 || guess > 100) // Check if the number to guess is out of the valid range
         {
-            WriteColoredMessage("The number you entered is out of the valid range. Please enter a number between 1 and 100.", ConsoleColor.Yellow);
+            WriteColoredMessage("Please enter a number between 1 and 100.", ConsoleColor.Yellow);
             continue; // Skip the rest of the loop and prompt the user again
         }
 
