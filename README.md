@@ -1,28 +1,46 @@
-Number Guessing Game
+# Number Guessing Game
 
-Simple Number Guessing Game. Made in C# for practice
+A simple number guessing game built in C# for practice.
 
-Features
-- Random number generator
-- Guessing until correct
-- Gives hints based of your guess
+## Features
 
-Requirements .NET SDK
-https://dotnet.microsoft.com/en-us/download
+- Random number generation
+- Guess until you find the correct number
+- Hints (too high / too low)
+- Option to play again after winning
 
-Installation and Launching
-1. Clone the repository
-2. Navigate to the project Folder
-	- In your command prompt or terminal enter
+## Requirements
+
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download)
+
+## Installation and Launching
+
+1. Clone the repository.
+
+2. Navigate to the project folder:
 
 cd "Your\File\Path"
 
-3. Build and run the project
-	- In your command prompt or terminal enter
+3. Run the project:
 
 dotnet run
 
-Controls
-Type your guess 1-100
-Typing end will close the program 
-Typing yes after winning will play again
+## Controls
+
+- Enter a number between 1 and 100 to make a guess
+- Type "end" to exit the program
+- Type "yes" after winning to play again
+
+## What I Learned
+
+- Using random number generation
+- Handling user input and validation
+- Creating loops for game flow
+- Providing feedback based on input
+
+## Future Improvements
+
+- Add difficulty levels (range or attempts)
+- Track number of attempts
+- Add a high score system
+- Improve user prompts and feedback
